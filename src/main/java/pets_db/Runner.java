@@ -5,14 +5,11 @@ public class Runner {
 		PetsDAO dao = new PetsDAO();
 
 		dao.read();
+		System.out.println(dao.read());
+//		System.out.println(dao.create("mouse", "tom", "brown", 9));
+		System.out.println(dao.read());
+		System.out.println(dao.Update("elephant", "jim", "brown", 23, 2));
 
 	}
-//		try (PetsDAO dao = new PetsDao("jdbc:mysql://localhost:3306/global_logic", "root", "pass");) {
-//			System.out.println(dao.create("", "", ""));
-//			System.out.println(dao.read());
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//
-//		}
-//	}
+
 }
